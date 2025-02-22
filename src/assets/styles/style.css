@@ -1,0 +1,175 @@
+@import url('./variables.css');
+
+/*HeroComp*/
+.elipse {
+    position: absolute;
+    top: 120px; /* Процент от высоты родителя */
+    left: 50%; /* Центрирование относительно ширины */
+    transform: translate(-50%, -50%);
+    width: 100%;
+    max-width: 653px;
+    height: 653px;
+    background: radial-gradient(40.81% 40.81% at 48.76% 49.47%, rgba(156, 220, 170, 0.44) 0%, rgba(150, 202, 247, 0.45) 46.5%, rgba(191, 178, 243, 0) 100%);
+    opacity: 50%;
+  }
+  .elipse-2 {
+      background: radial-gradient(40.81% 40.81% at 48.76% 49.47%, rgba(248, 163, 168, 0.43) 0%, rgba(243, 198, 165, 0.4) 50%, rgba(229, 225, 171, 0) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+      top: 230px;
+      left: 30%;
+      position: absolute;
+      opacity: 60%;
+      max-width: 874px;
+      width: 100%;
+      height: 874px;
+  }
+  .hero-wrapp {
+      margin-top: 26px;
+  }
+  .hero-header {
+      display: flex;
+      justify-content: space-between;
+  }
+  .hero-title {
+      max-width: 630px;
+      width: 100%;
+      height: 234px;
+      margin-top: 89px;
+  }
+  
+  .hero-title h1 {
+      font-weight: 500;
+  }
+  
+  .hero-nav {
+      max-width: 531px;
+      height: 24px;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 56px;
+      margin-top: 120px;
+      z-index: 1;
+  }
+  
+  .hero-nav img {
+      max-width: 111px;
+      width: 100%;
+      height: 11px;
+  }
+  
+  .hero-nav ul {
+      display: flex;
+      font-size: 20px;
+      text-decoration: underline;
+      text-transform: uppercase;
+      justify-content: space-between;
+      width: 100%;
+  }
+
+  .hero-nav a {
+    transition: all 0.3s;
+  }
+
+  .hero-nav a:hover {
+    opacity: 50%;
+  }
+  
+  .hero-body {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 40px;
+  }
+  
+  .hero-btn {
+      max-width: 228px;
+      width: 100%;
+      padding: 10px;
+  }
+  
+  .hero-body h1 {
+      max-width: 650px;
+      width: 100%;
+      height: 234px;
+  }
+  
+  .hero-body em {
+      font-weight: 600;
+      font-style: italic;
+  }
+  
+  .hero-footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 19px;
+  }
+  
+  .hero-about {
+      max-width: 644px;
+      width: 100%;
+  }
+  
+  .hero-about h4 {
+      font-size: 20px;
+      font-weight: 400;
+  }
+  
+  .hero-rewiew {
+      max-width: 383px;
+      width: 100%;
+      height: 78px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+  }
+  .rewiew-title {
+      max-width: 178px;
+      width: 100%;
+      display: grid;
+      gap: 16px;
+  }
+  .rewiew-star {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      max-width: 93px;
+      width: 100%;
+  }
+  .rewiew-title span {
+      font-size: 26px;
+  }
+  .circle-wrapper {
+        display: flex;
+        position: relative;
+      }
+  
+      .circle {
+        width: 66px;
+        height: 66px;
+        background: #C4C4C4;
+        border-radius: 50%;
+        position: relative;
+        margin-left: -14px; /* Наложение кругов */
+        border: 1.89px solid #FDFDFD
+      }
+  
+      .circle:first-child {
+        margin-left: 0;
+        z-index: 2;
+      }
+  
+      .circle:nth-child(2) {
+        background-color: #C4C4C4;
+        z-index: 1;
+      }
+  
+      .circle:nth-child(3) {
+          background: #C4C4C4;
+      }
+  @media screen and (min-width: 1920px){
+    /* Ваши CSS стили для экрана ровно 1920px */
+    .elipse-2 {
+      left: 50%;
+    }
+  }

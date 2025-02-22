@@ -1,0 +1,50 @@
+:root {
+    --txt-color: #000000;
+    --btn-text: #ffffff;
+    --btn-back: #000000;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+.container {
+    max-width: 1290px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-size: 96px;
+    font-weight: 500;
+    letter-spacing: 4px;
+    line-height: 117px;
+}
+
+li {  
+    list-style-type: none;
+    color: black;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.btn {
+    background: var(--btn-back);
+    color: var(--btn-text);
+    border-radius: 100px;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    transition: all 0.3s;
+}
+
+.btn:hover {
+    background: rgb(42, 42, 42);
+}
